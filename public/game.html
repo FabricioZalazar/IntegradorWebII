@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag the Game</title>
+    <style>
+        body {
+            background-color: rgba(26, 26, 63, 0.781);
+        }
+
+        #sectionGame {
+            margin: 0 auto;
+            background-color: blue;
+            width: 50%;
+            height: 600px;
+            display: grid;
+            grid-template-rows: 60% 10% 40%;
+        }
+
+        #cajaImg {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #cajaImg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #cajaPreguntas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        #cajaPreguntas h6 {
+            width: 100%;
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        #cajaPreguntas button {
+            width: 45%;
+            height: 60px;
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="sectionGame">
+        <div id="cajaImg"><img src="https://nupec.com/wp-content/uploads/2021/12/domestic-cat-EABDSUL-1024x779.jpg"
+                alt=""></div>
+        
+        <div id="cajaPreguntas">
+            <h6 id="pregunta">Pais?</h6>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+
+        <script>
+            document.getElementById("pregunta").innerHTML = obtenerPregunta();
+
+            async function obtenerPregunta() {
+                const res =  await fetch("/api/pregunta");
+                const respuesta= await res.json();
+
+               return respuesta.respuesta;
+            }
+        </script>
+    </section>
+</body>
+
+</html>

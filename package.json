@@ -2,10 +2,11 @@
   "name": "integradorwebii",
   "version": "1.0.0",
   "description": "Juego de Banderas - Trabajo Integrador - Fabricio Zalazar",
-  "main": "server.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   },
   "homepage": "https://github.com/FabricioZalazar/IntegradorWebII#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

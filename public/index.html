@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag the Game</title>
+    <style>
+        body {
+            background-image: url(https://images8.alphacoders.com/372/372491.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family: fantasy;
+            color: rgb(211, 210, 190);
+            background-color: rgba(18, 15, 49, 0.445);
+            text-align: center;
+        }
+
+        #menu {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(211, 210, 190);
+            margin: 100px auto;
+            width: 60%;
+            background-color: rgba(18, 15, 49, 0.445);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        #menu *{
+            font-size: 15px;
+            padding: 5px;;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flag the Game</h1>
+    <div id="menu">
+        <label for="name">Ingresar Nombre</label>
+        <input type="text" name="name">
+        <button > <a href="/public/game.html">Jugar</a> </button>
+        <button> Ranking </button>
+    </div>
+
+    <script>
+        async function obtenerPregunta() {
+            const res = await fetch("/api/pregunta");
+            const data = await res.json();
+
+            document.getElementById("menu").innerHTML = data.respuesta
+        }
+
+
+    </script>
+</body>
+
+</html>
