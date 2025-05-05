@@ -33,11 +33,20 @@
             justify-content: space-evenly;
             flex-direction: column;
         }
-        #menu *{
+
+        #menu * {
             font-size: 15px;
-            padding: 5px;;
+            padding: 5px;
+            ;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
+
+
 </head>
 
 <body>
@@ -45,15 +54,14 @@
     <div id="menu">
         <label for="name">Ingresar Nombre</label>
         <input type="text" name="name">
-        <button > <a href="/public/game.html">Jugar</a> </button>
-        <button> Ranking </button>
+        <button> <a href="game.html">Jugar</a> </button>
+        <button> <a href="/ranking.html" class="btn btn-secondary">Ver Ranking</a> </button>
     </div>
 
     <script>
         async function obtenerPregunta() {
             const res = await fetch("/api/pregunta");
             const data = await res.json();
-
             document.getElementById("menu").innerHTML = data.respuesta
         }
 

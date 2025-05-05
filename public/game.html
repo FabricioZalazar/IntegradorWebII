@@ -6,79 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flag the Game</title>
     <style>
-        body {
-            background-color: rgba(26, 26, 63, 0.781);
-        }
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
 
-        #sectionGame {
-            margin: 0 auto;
-            background-color: blue;
-            width: 50%;
-            height: 600px;
-            display: grid;
-            grid-template-rows: 60% 10% 40%;
-        }
+    body {
+      background-color: #1a1a3f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        #cajaImg {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
+    #sectionGame {
+      background-color: #0044cc;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+    }
 
-        #cajaImg img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    #cajaImg {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
 
-        #cajaPreguntas {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 10px;
-        }
+    #cajaImg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        #cajaPreguntas h6 {
-            width: 100%;
-            text-align: center;
-            color: white;
-            margin-bottom: 10px;
-        }
+    #pregunta {
+      color: white;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 10px 0;
+    }
 
-        #cajaPreguntas button {
-            width: 45%;
-            height: 60px;
-            margin: 5px 0;
-            font-size: 1rem;
-        }
+    #opciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .opciones {
+      flex: 1 1 45%;
+      padding: 10px;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .opciones:hover {
+      background-color: #e0e0e0;
+    }
+
+    #btnSiguiente {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #f0ad4e;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px auto 0;
+      display: none;
+    }
+
+    #Respuesta {
+      color: white;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
     </style>
 </head>
 
 <body>
     <section id="sectionGame">
-        <div id="cajaImg"><img src="https://nupec.com/wp-content/uploads/2021/12/domestic-cat-EABDSUL-1024x779.jpg"
+        <div id="cajaImg"><img id="bandera-img" src=""
                 alt=""></div>
         
         <div id="cajaPreguntas">
-            <h6 id="pregunta">Pais?</h6>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <h6 id="pregunta"></h6>
+            <div id="opciones"></div> 
         </div>
-
-        <script>
-            document.getElementById("pregunta").innerHTML = obtenerPregunta();
-
-            async function obtenerPregunta() {
-                const res =  await fetch("/api/pregunta");
-                const respuesta= await res.json();
-
-               return respuesta.respuesta;
-            }
-        </script>
+        <div>
+        <button id="btnSiguiente">Siguiente</button>
+        <p id="Respuesta"></p></div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

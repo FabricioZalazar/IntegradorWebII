@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ranking de Partidas</title></head>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .tabla {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .tabla th,
+    .tabla td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .tabla th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+
+    .btnVolver {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btnVolver a {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btnVolver a:hover {
+      background-color: #0056b3;
+    }
+
+   
+  </style>
+<body >
+  <div class="container">
+    <h2 class="titulo">Top 20 Partidas</h2>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Puesto</th>
+          <th>Fecha</th>
+          <th>Puntaje</th>
+          <th>Correctas</th>
+          <th>Incorrectas</th>
+          <th>Duración (s)</th>
+          <th>Promedio (s)</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-ranking"></tbody>
+    </table>
+    <div class="btnVolver">
+      <a href="/index.html">Volver al juego</a>
+    </div>
+  </div>
+  <script>
+    async function cargarRanking() {
+      const res = await fetch('/api/ranking');
+      const data = await res.json();
+      const tabla = document.getElementById('tabla-ranking');
+      tabla.innerHTML = '';
+      data.forEach((partida, index) => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${new Date(partida.fecha).toLocaleString()}</td>
+          <td>${partida.puntaje}</td>
+          <td>${partida.correctas}</td>
+          <td>${partida.incorrectas}</td>
+          <td>${partida.duracionTotal}s</td>
+          <td>${partida.tiempoPromedio}s</td>
+        `;
+        tabla.appendChild(fila);
+      });
+    }
+    cargarRanking();
+  </script>
+</body>
+</html>

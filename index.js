@@ -12,15 +12,22 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/game', async (req, res) => {
+  try {
+    res.sendFile(path.join(__dirname, '/public/game.html'))
+  } catch (err) {
+    res.status(404).send(`<h1> error: Error 404 ${err} </h1>`);
+  }
+})
 
 app.get('/api/pregunta', async (req, res) => {
-   try { 
+  try {
     const pregunta = await generarPregunta();
     res.json(pregunta);
-  }  catch (error) {
+  } catch (error) {
     console.log(error)
     res.status(500).json({ error: 'Error al generar la pregunta' });
-  } 
+  }
 });
 
 app.post('/api/partida', async (req, res) => {
@@ -31,7 +38,7 @@ app.post('/api/partida', async (req, res) => {
     try {
       const data = await fs.readFile(dataPath, 'utf-8');
       partidas = JSON.parse(data);
-    } catch {}
+    } catch { }
 
     partidas.push(partida);
     await fs.writeFile(dataPath, JSON.stringify(partidas, null, 2));
@@ -41,6 +48,22 @@ app.post('/api/partida', async (req, res) => {
   }
 });
 
+app.get('/api/ranking', async (req, res) => {
+  try {
+    const dataPath = path.join(__dirname, 'data', 'partidas.json');
+    const contenido = await fs.readFile(dataPath, 'utf-8');
+    const partidas = JSON.parse(contenido);
+
+    // Ordenar por puntaje (descendente) y cortar las primeras 20
+    const top20 = partidas
+      .sort((a, b) => b.puntaje - a.puntaje)
+      .slice(0, 20);
+
+    res.json(top20);
+  } catch (err) {
+    res.status(500).json({ error: 'No se pudo leer el ranking' });
+  }
+});
 
 app.listen(port, () => {
   console.log(`Servidor funcionando en el puerto ${port}`);
