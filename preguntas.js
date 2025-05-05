@@ -2,15 +2,21 @@ import fetch from 'node-fetch';
 
 let paisesCache = [];
 
+
 async function cargarPaises() {
   if (paisesCache.length === 0) {
-    const res = await fetch('https://restcountries.com/v3.1/all');
-    const data = await res.json();
-    paisesCache = data;
+    try {
+      const res = await fetch('https://restcountries.com/v3.1/all');
+      if (!res.ok) throw new Error(`Error HTTP: ${res.status}`);
+      const data = await res.json();
+      paisesCache = data;
+    } catch (error) {
+      console.error('Error al cargar países:', error);
+      throw error; 
+    }
   }
   return paisesCache;
 }
-
 export async function generarPregunta() {
   const paises = await cargarPaises();
   let tipo = Math.floor(Math.random() * 3); // Con esto se elije que pregunta tipo se envia 0=Capital 1=Bandera 2=Fronteras
@@ -66,7 +72,7 @@ export async function generarPregunta() {
         opciones.push(num)
       }
     }
-
+    
     return opciones.sort(() => Math.random() - 0.5); //mezclamos antes de enviar
 
   }
