@@ -16,7 +16,15 @@ app.get('/game', async (req, res) => {
   try {
     res.sendFile(path.join(__dirname, '/public/game.html'))
   } catch (err) {
-    res.status(404).send(`<h1> error: Error 404 ${err} </h1>`);
+    res.status(500).send(`<h1> error: Error 500 ${err} </h1>`);
+  }
+})
+
+app.get('/ranking', async (req, res) => {
+  try {
+    res.sendFile(path.join(__dirname, '/public/ranking.html'))
+  } catch (err) {
+    res.status(500).send(`<h1> error: Error 500 ${err} </h1>`);
   }
 })
 
@@ -62,6 +70,10 @@ app.get('/api/ranking', async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: 'No se pudo leer el ranking' });
   }
+});
+
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
 
 app.listen(port, () => {

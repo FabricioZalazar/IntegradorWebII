@@ -78,5 +78,1205 @@
         "puntaje": 0
       }
     ]
+  },
+  {
+    "fecha": "2025-05-05T18:53:00.031Z",
+    "puntaje": 3,
+    "correctas": 1,
+    "incorrectas": 9,
+    "duracionTotal": "302.29",
+    "tiempoPromedio": "30.23",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 299.2,
+        "puntaje": 3
+      },
+      {
+        "numero": 3,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.42,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.3,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.25,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.25,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.24,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.18,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.42,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.15,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.88,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:00:07.408Z",
+    "puntaje": 11,
+    "correctas": 3,
+    "incorrectas": 7,
+    "duracionTotal": "18.97",
+    "tiempoPromedio": "1.90",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 5.18,
+        "puntaje": 0
+      },
+      {
+        "numero": 3,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.3,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.7,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.66,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 1.76,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 6.25,
+        "puntaje": 3
+      },
+      {
+        "numero": 8,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 1.08,
+        "puntaje": 3
+      },
+      {
+        "numero": 9,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.55,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 0.91,
+        "puntaje": 5
+      },
+      {
+        "numero": 11,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.58,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:09:21.436Z",
+    "puntaje": 9,
+    "correctas": 3,
+    "incorrectas": 7,
+    "duracionTotal": "10.63",
+    "tiempoPromedio": "1.06",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.96,
+        "puntaje": 3
+      },
+      {
+        "numero": 3,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 1.31,
+        "puntaje": 3
+      },
+      {
+        "numero": 4,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.04,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 1.03,
+        "puntaje": 3
+      },
+      {
+        "numero": 6,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.93,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.61,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 1.01,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.5,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 2.43,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.81,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:10:36.586Z",
+    "puntaje": 14,
+    "correctas": 4,
+    "incorrectas": 6,
+    "duracionTotal": "10.23",
+    "tiempoPromedio": "1.02",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.6,
+        "puntaje": 3
+      },
+      {
+        "numero": 3,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 1.09,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.82,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 4.6,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.85,
+        "puntaje": 3
+      },
+      {
+        "numero": 7,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.45,
+        "puntaje": 3
+      },
+      {
+        "numero": 8,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 0.62,
+        "puntaje": 5
+      },
+      {
+        "numero": 9,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.49,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.34,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.37,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:10:53.418Z",
+    "puntaje": 8,
+    "correctas": 2,
+    "incorrectas": 8,
+    "duracionTotal": "5.29",
+    "tiempoPromedio": "0.53",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.7,
+        "puntaje": 0
+      },
+      {
+        "numero": 3,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 0.49,
+        "puntaje": 5
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.52,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.4,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.43,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.51,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.48,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.68,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.58,
+        "puntaje": 3
+      },
+      {
+        "numero": 11,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.5,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:11:06.598Z",
+    "puntaje": 11,
+    "correctas": 3,
+    "incorrectas": 7,
+    "duracionTotal": "6.03",
+    "tiempoPromedio": "0.60",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 0.55,
+        "puntaje": 5
+      },
+      {
+        "numero": 3,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.5,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.43,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.48,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.51,
+        "puntaje": 3
+      },
+      {
+        "numero": 7,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.58,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.65,
+        "puntaje": 3
+      },
+      {
+        "numero": 9,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.45,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.46,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.42,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:13:31.414Z",
+    "puntaje": 8,
+    "correctas": 2,
+    "incorrectas": 8,
+    "duracionTotal": "11.29",
+    "tiempoPromedio": "1.13",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.39,
+        "puntaje": 3
+      },
+      {
+        "numero": 3,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.37,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.34,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.32,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.31,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.32,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 5.97,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 2.04,
+        "puntaje": 5
+      },
+      {
+        "numero": 10,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.54,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.69,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:13:53.977Z",
+    "puntaje": 8,
+    "correctas": 2,
+    "incorrectas": 8,
+    "duracionTotal": "9.75",
+    "tiempoPromedio": "0.97",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.77,
+        "puntaje": 0
+      },
+      {
+        "numero": 3,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.48,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.38,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.34,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 2.55,
+        "puntaje": 5
+      },
+      {
+        "numero": 7,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.6,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.82,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.76,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.36,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.69,
+        "puntaje": 3
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:14:16.042Z",
+    "puntaje": 8,
+    "correctas": 2,
+    "incorrectas": 8,
+    "duracionTotal": "12.40",
+    "tiempoPromedio": "1.24",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.79,
+        "puntaje": 0
+      },
+      {
+        "numero": 3,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.82,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.32,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.93,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.17,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 3.24,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.85,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.42,
+        "puntaje": 3
+      },
+      {
+        "numero": 10,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 2.25,
+        "puntaje": 5
+      },
+      {
+        "numero": 11,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.61,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:14:48.207Z",
+    "puntaje": 3,
+    "correctas": 1,
+    "incorrectas": 9,
+    "duracionTotal": "9.09",
+    "tiempoPromedio": "0.91",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 3.39,
+        "puntaje": 0
+      },
+      {
+        "numero": 3,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.84,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.4,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.66,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.51,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.56,
+        "puntaje": 3
+      },
+      {
+        "numero": 8,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.53,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.36,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.33,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.51,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:17:12.490Z",
+    "puntaje": 0,
+    "correctas": 0,
+    "incorrectas": 10,
+    "duracionTotal": "7.04",
+    "tiempoPromedio": "0.70",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.53,
+        "puntaje": 0
+      },
+      {
+        "numero": 3,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.58,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.59,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.33,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.43,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.08,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.54,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 1.1,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.41,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.45,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:18:10.909Z",
+    "puntaje": 9,
+    "correctas": 3,
+    "incorrectas": 7,
+    "duracionTotal": "6.58",
+    "tiempoPromedio": "0.66",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.39,
+        "puntaje": 3
+      },
+      {
+        "numero": 3,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.38,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.6,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.51,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.29,
+        "puntaje": 3
+      },
+      {
+        "numero": 7,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.67,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.9,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.41,
+        "puntaje": 3
+      },
+      {
+        "numero": 10,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.73,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.7,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:20:59.180Z",
+    "puntaje": 14,
+    "correctas": 4,
+    "incorrectas": 6,
+    "duracionTotal": "6.95",
+    "tiempoPromedio": "0.69",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.53,
+        "puntaje": 3
+      },
+      {
+        "numero": 3,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.29,
+        "puntaje": 3
+      },
+      {
+        "numero": 4,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.26,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.28,
+        "puntaje": 3
+      },
+      {
+        "numero": 6,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.9,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.59,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 2.25,
+        "puntaje": 5
+      },
+      {
+        "numero": 9,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.43,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.68,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.74,
+        "puntaje": 0
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:21:43.790Z",
+    "puntaje": 5,
+    "correctas": 1,
+    "incorrectas": 9,
+    "duracionTotal": "5.86",
+    "tiempoPromedio": "0.59",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.4,
+        "puntaje": 0
+      },
+      {
+        "numero": 3,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.76,
+        "puntaje": 0
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.58,
+        "puntaje": 0
+      },
+      {
+        "numero": 5,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.37,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.34,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.33,
+        "puntaje": 0
+      },
+      {
+        "numero": 8,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 1.24,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "fronteras",
+        "correcta": false,
+        "tiempo": 0.68,
+        "puntaje": 0
+      },
+      {
+        "numero": 10,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.49,
+        "puntaje": 0
+      },
+      {
+        "numero": 11,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 0.67,
+        "puntaje": 5
+      }
+    ]
+  },
+  {
+    "fecha": "2025-05-05T19:22:32.173Z",
+    "puntaje": 25,
+    "correctas": 7,
+    "incorrectas": 3,
+    "duracionTotal": "32.85",
+    "tiempoPromedio": "3.29",
+    "respuestas": [
+      {
+        "numero": 2,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 26.09,
+        "puntaje": 3
+      },
+      {
+        "numero": 3,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 1.29,
+        "puntaje": 5
+      },
+      {
+        "numero": 4,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.61,
+        "puntaje": 3
+      },
+      {
+        "numero": 5,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.45,
+        "puntaje": 0
+      },
+      {
+        "numero": 6,
+        "tipo": "bandera",
+        "correcta": false,
+        "tiempo": 0.88,
+        "puntaje": 0
+      },
+      {
+        "numero": 7,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.66,
+        "puntaje": 3
+      },
+      {
+        "numero": 8,
+        "tipo": "capital",
+        "correcta": false,
+        "tiempo": 0.6,
+        "puntaje": 0
+      },
+      {
+        "numero": 9,
+        "tipo": "capital",
+        "correcta": true,
+        "tiempo": 0.46,
+        "puntaje": 3
+      },
+      {
+        "numero": 10,
+        "tipo": "bandera",
+        "correcta": true,
+        "tiempo": 1.2,
+        "puntaje": 5
+      },
+      {
+        "numero": 11,
+        "tipo": "fronteras",
+        "correcta": true,
+        "tiempo": 0.61,
+        "puntaje": 3
+      }
+    ]
   }
 ]

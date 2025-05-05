@@ -2,34 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Ranking de Partidas</title></head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking de Partidas</title>
   <style>
     body {
-      background-color: #929292;
-      font-family: Arial, sans-serif;
+      background-color: #969696;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
     }
 
     .container {
-        max-width: 90%;
+      max-width: 960px;
       margin: 40px auto;
       padding: 20px;
       background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     .titulo {
       text-align: center;
       margin-bottom: 30px;
       color: #333;
-      font-size: 2em;
+      font-size: 1.8em;
+    }
+
+    .tabla-wrapper {
+      overflow-x: auto;
     }
 
     .tabla {
       width: 100%;
       border-collapse: collapse;
+      min-width: 600px;
     }
 
     .tabla th,
@@ -37,14 +43,18 @@
       padding: 12px;
       border: 1px solid #ccc;
       text-align: center;
-      font-size: 1em;
+      font-size: 0.95em;
     }
 
     .tabla th {
       background-color: #007BFF;
       color: white;
+      font-weight: 600;
     }
 
+    .tabla tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
 
     .btnVolver {
       text-align: center;
@@ -58,35 +68,51 @@
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
     .btnVolver a:hover {
       background-color: #0056b3;
     }
 
-   
+    @media (max-width: 600px) {
+      .titulo {
+        font-size: 1.5em;
+      }
+
+      .tabla th, .tabla td {
+        font-size: 0.85em;
+        padding: 8px;
+      }
+    }
   </style>
-<body >
+</head>
+
+<body>
   <div class="container">
     <h2 class="titulo">Top 20 Partidas</h2>
-    <table class="tabla">
-      <thead>
-        <tr>
-          <th>Puesto</th>
-          <th>Fecha</th>
-          <th>Puntaje</th>
-          <th>Correctas</th>
-          <th>Incorrectas</th>
-          <th>Duración (s)</th>
-          <th>Promedio (s)</th>
-        </tr>
-      </thead>
-      <tbody id="tabla-ranking"></tbody>
-    </table>
+    <div class="tabla-wrapper">
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>Puesto</th>
+            <th>Fecha</th>
+            <th>Puntaje</th>
+            <th>Correctas</th>
+            <th>Incorrectas</th>
+            <th>Duración (s)</th>
+            <th>Promedio (s)</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-ranking"></tbody>
+      </table>
+    </div>
     <div class="btnVolver">
       <a href="/index.html">Volver al juego</a>
     </div>
   </div>
+
   <script>
     async function cargarRanking() {
       const res = await fetch('/api/ranking');

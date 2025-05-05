@@ -1,85 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flag the Game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url(./Fondo.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed; 
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flag the Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(./Fondo.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
 
-        h1 {
-            font-family: 'Press Start 2P', cursive;
-            color: #ffb94f;
-            background-color: rgba(0, 0, 0, 0.822);
-            text-align: center;
-            font-size: 70px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            letter-spacing: 2px; /* Añade un poco de espacio entre letras */
-}
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      color: #ffb94f;
+      background-color: rgba(0, 0, 0, 0.85);
+      text-align: center;
+      font-size: 60px;
+      padding: 30px;
+      margin-top: 0;
+      letter-spacing: 3px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+      border-bottom: 4px solid #ffc107;
+    }
 
-        #menu {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: rgb(211, 210, 190);
-            margin: 100px auto;
-            width: 60%;
-            background-color: rgba(0, 0, 0, 0.37);
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
+    #menu {
+      margin: 100px auto;
+      width: 80%;
+      max-width: 500px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        #menu * {
-            font-size: 20px;
-            padding: 2px;
-            ;
-        }
+    #menu a {
+      font-family: 'Press Start 2P', cursive;
+      display: inline-block;
+      margin: 20px 10px;
+      background-color: #ff5722;
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
 
-        #menu a {
-            display: inline-block;
-            margin: 10px;
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        #menu a:hover {
-            background-color: #17385c;
-        }
-    </style>
-
-
+    #menu a:hover {
+      background-color: #e64a19;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Flag the Game</h1>
-    <div id="menu">
-        <a href="game.html">Jugar</a>
-        <a href="/ranking.html">Ver Ranking</a>
-    </div>
+  <h1>Flag the Game</h1>
 
-    <script>
-        async function obtenerPregunta() {
-            const res = await fetch("/api/pregunta");
-            const data = await res.json();
-            document.getElementById("menu").innerHTML = data.respuesta
-        }
+  <div id="menu">
+    <a href="game.html">🎮 Jugar</a>
+    <a href="/ranking.html">🏆 Ver Ranking</a>
+  </div>
 
-
-    </script>
+  <script>
+    async function obtenerPregunta() {
+      const res = await fetch("/api/pregunta");
+      const data = await res.json();
+      document.getElementById("menu").innerHTML = data.respuesta;
+    }
+  </script>
 </body>
-
 </html>

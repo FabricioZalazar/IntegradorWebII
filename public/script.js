@@ -119,7 +119,7 @@ function terminarPartida() {
           <p>Incorrectas: ${respuestasIncorrectas}</p>
           <p>Duración total: ${totalTiempo.toFixed(2)} segundos</p>
           <p>Promedio por pregunta: ${promedio} segundos</p>
-          <button><a href="/">Volver a jugar</a></button>
+          <a href="/">Volver a jugar</a>
         
         </div>
       `;
