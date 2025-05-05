@@ -7,108 +7,169 @@
     <title>Flag the Game</title>
     <style>
         * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
 
-    body {
-      background-color: #1a1a3f;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+        body {
+            background-image: url(./Fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-    #sectionGame {
-      background-color: #0044cc;
-      width: 90%;
-      max-width: 600px;
-      border-radius: 10px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      padding: 20px;
-    }
+        #sectionGame {
+            background-color: #23478f;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
 
-    #cajaImg {
-      width: 100%;
-      aspect-ratio: 16/9;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
+        #cajaImg {
+            width: 100%;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            display: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
-    #cajaImg img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+        #cajaImg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
 
-    #pregunta {
-      color: white;
-      font-size: 1.2rem;
-      text-align: center;
-      margin: 10px 0;
-    }
+        #pregunta {
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 10px 0;
+        }
 
-    #opciones {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
+        #opciones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
 
-    .opciones {
-      flex: 1 1 45%;
-      padding: 10px;
-      background-color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
+        .opciones {
+            flex: 1 1 45%;
+            padding: 10px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
 
-    .opciones:hover {
-      background-color: #e0e0e0;
-    }
+        .opciones:hover {
+            background-color: #e0e0e0;
+        }
 
-    #btnSiguiente {
-      padding: 10px 20px;
-      font-size: 1rem;
-      background-color: #f0ad4e;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 10px auto 0;
-      display: none;
-    }
+        #btnSiguiente {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #f0ad4e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px auto 0;
+            display: none;
+        }
 
-    #Respuesta {
-      color: white;
-      text-align: center;
-      margin-top: 10px;
-      font-weight: bold;
-    }
+        #Respuesta {
+            color: white;
+            padding: 4px;
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            background-color: #0000006c;
+            border-radius: 10px;
+        }
+
+        .cajaResultado {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fff;
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            margin: 40px auto;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cajaResultado h2 {
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        .cajaResultado hr {
+            width: 80%;
+            margin: 10px auto;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .cajaResultado p {
+            font-size: 1rem;
+            margin: 8px 0;
+            color: #333;
+        }
+
+        .cajaResultado button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 15px;
+        }
+
+        .cajaResultado button:hover {
+            background-color: #0056b3;
+        }
+
+        .cajaResultado a {
+            text-decoration: none;
+            color: inherit;
+        }
     </style>
 </head>
 
 <body>
     <section id="sectionGame">
-        <div id="cajaImg"><img id="bandera-img" src=""
-                alt=""></div>
-        
+        <div id="cajaImg"><img id="bandera-img" src="" alt=""></div>
+
         <div id="cajaPreguntas">
             <h6 id="pregunta"></h6>
-            <div id="opciones"></div> 
+            <div id="opciones"></div>
         </div>
         <div>
-        <button id="btnSiguiente">Siguiente</button>
-        <p id="Respuesta"></p></div>
+            <button id="btnSiguiente">Siguiente</button>
+            <p id="Respuesta"></p>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>

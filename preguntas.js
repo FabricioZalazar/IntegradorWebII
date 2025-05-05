@@ -17,11 +17,11 @@ async function cargarPaises() {
   }
   return paisesCache;
 }
+
 export async function generarPregunta() {
   const paises = await cargarPaises();
   let tipo = Math.floor(Math.random() * 3); // Con esto se elije que pregunta tipo se envia 0=Capital 1=Bandera 2=Fronteras
-
-  const pais = paises[Math.floor(Math.random() * paises.length)]; //Pais pie
+  let pais = paises[Math.floor(Math.random() * paises.length)]; //Pais pie
   const opciones = [pais];
 
   while (opciones.length < 4) {
@@ -30,32 +30,35 @@ export async function generarPregunta() {
       opciones.push(candidato);
     }
   }
-
+  
   opciones.sort(() => Math.random() - 0.5); // Mezclar opciones
+
 
   if (tipo === 0 && (!pais.capital || !pais.capital[0])) {
     tipo = Math.floor(Math.random() * 2);
+ 
   }
 
   if (tipo === 0) {
     return {
       tipo: 'capital',
       pregunta: `¿Cuál es el país de la capital ${pais.capital?.[0]}?`,
-      opciones: opciones.map(p => p.name.common),
-      respuesta: pais.name.common
+    
+      opciones: opciones.map(p => p.translations.spa.common),
+      respuesta: pais.translations.spa.common
     };
   } else if (tipo === 1) {
     return {
       tipo: 'bandera',
       pregunta: `¿A qué país pertenece esta bandera?`,
       imagen: pais.flags.png,
-      opciones: opciones.map(p => p.name.common),
-      respuesta: pais.name.common
+      opciones: opciones.map(p => p.translations.spa.common),
+      respuesta: pais.translations.spa.common
     };
   } else {
     return {
       tipo: 'fronteras',
-      pregunta: `¿Cuántos países limítrofes tiene ${pais.name.common}?`,
+      pregunta: `¿Cuántos países limítrofes tiene ${pais.translations.spa.common}?`,
       opciones: rellenarOpciones(pais.borders?.length || 0),
       respuesta: pais.borders?.length || 0
     };

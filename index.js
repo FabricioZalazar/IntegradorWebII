@@ -54,7 +54,6 @@ app.get('/api/ranking', async (req, res) => {
     const contenido = await fs.readFile(dataPath, 'utf-8');
     const partidas = JSON.parse(contenido);
 
-    // Ordenar por puntaje (descendente) y cortar las primeras 20
     const top20 = partidas
       .sort((a, b) => b.puntaje - a.puntaje)
       .slice(0, 20);

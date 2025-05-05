@@ -9,7 +9,6 @@ let tiempoInicioPregunta = null;
 let datosPartida = [];
 
 async function cargarPregunta() {
-
     if (preguntaActual === 10) {
         terminarPartida();
         return;
@@ -17,7 +16,6 @@ async function cargarPregunta() {
 
     const res = await fetch('/api/pregunta');
     const data = await res.json();
-    console.log(data);
     tipoPregunta = data.tipo;
     respuestaCorrecta = data.respuesta;
 
@@ -32,10 +30,11 @@ async function cargarPregunta() {
     Respuesta.textContent = '';
     btnSiguiente.style.display = 'none';
     bandera.style.display = 'none';
-    
+        Respuesta.style.display= 'none'
+
     if (tipoPregunta === 'bandera' && data.imagen) {
         bandera.src = data.imagen;
-        bandera.style.display = 'block';       // 👈 esto faltaba
+        bandera.style.display = 'block';
         cajaImg.style.display = 'block';
     } else {
         bandera.src = '';
@@ -60,7 +59,7 @@ async function cargarPregunta() {
             if (tipoPregunta === 'fronteras') puntajePregunta = 3;
 
             const correcta = op == respuestaCorrecta;
-
+            Respuesta.style.display = 'block'
             if (correcta) {
                 respuestasCorrectas++;
                 puntajeTotal += puntajePregunta;
@@ -112,14 +111,16 @@ function terminarPartida() {
         body: JSON.stringify(partida)
     }).then(() => {
         document.body.innerHTML = `
-        <div class="container py-5">
-          <h2 class="text-center">¡Juego finalizado!</h2>
+        <div class="cajaResultado">
+          <h2>¡Juego finalizado!</h2>
+          <hr>
           <p>Puntaje total: <strong>${puntajeTotal}</strong></p>
           <p>Correctas: ${respuestasCorrectas}</p>
           <p>Incorrectas: ${respuestasIncorrectas}</p>
           <p>Duración total: ${totalTiempo.toFixed(2)} segundos</p>
           <p>Promedio por pregunta: ${promedio} segundos</p>
-          <a href="/" class="btn btn-primary mt-3">Volver a jugar</a>
+          <button><a href="/">Volver a jugar</a></button>
+        
         </div>
       `;
     });
