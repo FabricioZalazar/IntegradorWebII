@@ -2,7 +2,6 @@ import fetch from 'node-fetch';
 
 let paisesCache = [];
 
-
 async function cargarPaises() {
   if (paisesCache.length === 0) {
     try {
@@ -75,8 +74,7 @@ export async function generarPregunta() {
         opciones.push(num)
       }
     }
-    
     return opciones.sort(() => Math.random() - 0.5); //mezclamos antes de enviar
-
   }
+
 }

@@ -8,6 +8,10 @@ let tiempos = [];
 let tiempoInicioPregunta = null;
 let datosPartida = [];
 
+const jsConfetti = new JSConfetti();
+
+
+
 async function cargarPregunta() {
     if (preguntaActual === 10) {
         terminarPartida();
@@ -61,6 +65,10 @@ async function cargarPregunta() {
             const correcta = op == respuestaCorrecta;
             Respuesta.style.display = 'block'
             if (correcta) {
+                jsConfetti.addConfetti({
+                    emojis: ['🎉', '🎊', '✨', '🥳'],
+                    confettiNumber: 30,
+                  });
                 respuestasCorrectas++;
                 puntajeTotal += puntajePregunta;
                 Respuesta.textContent = '¡Correcto!';
@@ -88,6 +96,8 @@ async function cargarPregunta() {
 
     preguntaActual++;
 }
+
+
 
 function terminarPartida() {
     const totalTiempo = tiempos.reduce((a, b) => a + b, 0);
@@ -119,7 +129,7 @@ function terminarPartida() {
           <p>Incorrectas: ${respuestasIncorrectas}</p>
           <p>Duración total: ${totalTiempo.toFixed(2)} segundos</p>
           <p>Promedio por pregunta: ${promedio} segundos</p>
-          <a href="/">Volver a jugar</a>
+          <a href="/">🔄 Volver a jugar</a>
         
         </div>
       `;
