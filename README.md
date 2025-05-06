@@ -43,7 +43,5 @@ El usuario debe responder 10 preguntas aleatorias sobre capitales, banderas y pa
 
 ## Cómo ejecutar localmente
 
-1. Cloná el proyecto:
-   ```bash
-   git clone https://github.com/tuusuario/juego-paises.git
-   cd juego-paises
+1. Cloná el proyecto
+2. npm install
